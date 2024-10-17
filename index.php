@@ -22,8 +22,13 @@
     switch($paymentstatus){
       case 0:
         echo '<p>unpayed</p>';
+        break;
       case 1:'<p>payed</p>';  
     } 
+    match($paymentstatus){
+      0 => '<p>unpayed</p>',
+      1 => '<p>payed</p>',
+    }
   
 
 ?>  
