@@ -1,11 +1,12 @@
-
 <!DOCTYPE html>
+<?php declare(strict_type=1); ?>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
+    <!-- <style>
       body {
         display: grid;
         font-family: Arial, sans-serif;
@@ -13,23 +14,19 @@
         place-items: center;
         height: 100vh;
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    <h1> recommended books</h1>
+    <h1> recommend books</h1>
     <?php
-    $paymentstatus = 1;
-    switch($paymentstatus){
-      case 0:
-        echo '<p>unpayed</p>';
-        break;
-      case 1:'<p>payed</p>';  
-    } 
-    match($paymentstatus){
-      0 => '<p>unpayed</p>',
-      1 => '<p>payed</p>',
-    }
-  
+
+  //  function getStatus(int $paymeStatus, bool $showMessage = true) : ?string {
+  //   $message = match($paymeStatus) {
+  //     1 => 'success',
+  //     2 => 'fail'
+  //   };
+
+  //  }
 
 ?>  
   </body>
